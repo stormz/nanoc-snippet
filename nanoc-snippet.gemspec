@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name             = "nanoc-snippet"
   s.version          = "0.0.2"
   s.date             = Time.now.utc.strftime("%Y-%m-%d")
-  s.homepage         = "https://github.com/stormz/nanoc-plugins"
+  s.homepage         = "https://github.com/stormz/nanoc-snippet"
   s.authors          = "François de Metz"
   s.email            = "francois@2metz.fr"
   s.summary          = "Show a snippet of one nanoc item"
