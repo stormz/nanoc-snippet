@@ -32,6 +32,6 @@ Some options are available. See the code to see all.
 
 ## License
 
-(c) 2012 Stormz
+(c) 2012-2015 Stormz
 
 This code is free to use under the terms of the MIT license
