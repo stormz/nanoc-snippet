@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name             = "nanoc-snippet"
-  s.version          = "0.0.2"
+  s.version          = "0.1.0"
   s.date             = Time.now.utc.strftime("%Y-%m-%d")
   s.homepage         = "https://github.com/stormz/nanoc-snippet"
   s.authors          = "François de Metz"
