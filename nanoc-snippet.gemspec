@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.files            = Dir["README.md", "lib/**/*.rb"]
   s.require_paths    = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.add_dependency "nokogiri"
+  s.add_dependency "html_truncator", "~> 0.4"
 end

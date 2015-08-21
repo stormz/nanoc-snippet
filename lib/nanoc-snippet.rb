@@ -1,4 +1,4 @@
-require 'nokogiri'
+require 'html_truncator'
 
 module Nanoc::Helpers
   module Snippet
@@ -6,17 +6,13 @@ module Nanoc::Helpers
     #
     # item - the nanoc item
     # options - options to customize the snippet (default: {})
-    #           :range - the range of characters for the snippet (default: 0..150)
-    #           :ellipsis - the ellipsis (default: '...')
-    #           :selector - the xpath selector for the snippet (default: '//p/text()')
+    #           :nb_words - the number of words to keep
+    #           all options valid for html_truncator
     #
     # Returns a snippet of the item
     def snippet(item, options={})
-      op = {:range => 0..150,
-            :ellipsis => '...',
-            :selector => '//p/text()'}.merge(options)
-      doc = Nokogiri::HTML(item.compiled_content)
-      doc.xpath(op[:selector]).to_a.join(" ").gsub("\r"," ").gsub("\n"," ")[op[:range]] + op[:ellipsis]
+      nb_words = options.delete(:nb_words) || 10
+      HTML_Truncator.truncate(item.compiled_content, nb_words, options)
     end
   end
 end

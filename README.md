@@ -2,7 +2,7 @@
 
 Show a snippet of one item.
 
-It use [nokogiri](http://nokogiri.org/).
+It use [HTML-Truncator](https://github.com/nono/HTML-Truncator).
 
 ## Install
 
